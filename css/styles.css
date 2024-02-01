@@ -1,0 +1,43 @@
+
+/* ----------------------------------------HEADER/MENÚ----------------------------------------- */
+
+.menu {
+    z-index: 2;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    width: 31%;
+    background: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+  }
+  .menu nav {
+    display: flex;
+  }
+  .menu a {
+    position: relative;
+    font-family: "Bree Serif", serif;
+    color: #000000;
+    font-size: 15px;
+    padding: 19px 60px;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  .menu a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 80%;
+    height: 2px;
+    border-radius: 2px;
+    background: #000000;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: 0.3s;
+  }
+  .menu a:hover::after,
+  .menu a.active::after {
+    transform: scaleX(1);
+  }
