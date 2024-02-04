@@ -13,23 +13,64 @@
 
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/f6c2459018.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
+    <div id="loading-overlay">
+        <div class="spinner">
+        </div>
+    </div>
     <header>
-        <div class="seccion_menu">
-            <div class="menu">
-                <nav>
-                    <a href="./index.html" class="active">Home</a>
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
-                </nav>
+        <div class="container flex">
+            <a href="https://chrjmz.netlify.app/" class="enlace">
+                <h1>JOVANI</h1>
+            </a>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="lateral">
+                <label for="check" class="checkbtn fondo-black">
+
+                </label>
+                <div class="menu">
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-x"></i>
+                    </label>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="./index.html" class="active">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
     <section>
-        
+        <div class="container flex dir-v-mob">
+            <div class="lado-a flex centrar-h dir-v left de2-mob animate__fadeIn">
+                <h3>Desarrollador web</h3>
+                <h2>Hola, soy Jhon Doe</h2>
+                <p>Con una pasión innata por la ingeniería de sistemas y el desarrollo web, transformo ideas en experiencias digitales cautivadoras</p>
+                <div class="flex">
+                    <a href="" class="button solido">PROJECTS</a>
+                    <a href="" class="button claro">LINKEDIN</a>
+                </div>
+            </div>
+            <div class="lado-b de1-mob">
+                <img src="assets/mac.jpg" alt="">
+            </div>
+        </div>
     </section>
     <footer>
         <div class="seccion_contacto">
@@ -45,8 +86,9 @@
                                 <h4>CHELSEA</h4>
                             </div>
                             <div class="info info_1">
-                                <div> 
-                                    <a href="https://maps.app.goo.gl/bAw1so2VARFAkvqu8" target="_blank"><i class="fa-solid fa-location-dot"></i>38 williams st, Chelsea, MA - 02150</a>
+                                <div>
+                                    <a href="https://maps.app.goo.gl/bAw1so2VARFAkvqu8" target="_blank"><i
+                                            class="fa-solid fa-location-dot"></i>38 williams st, Chelsea, MA - 02150</a>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +98,9 @@
                             </div>
                             <div class="info info_2">
                                 <div>
-                                    <a href="https://maps.app.goo.gl/FeTjVmbY7doXmJbJA" target="_blank"><i class="fa-solid fa-location-dot"></i>297 winthrop st, Winthrop, MA - 02152</a>
+                                    <a href="https://maps.app.goo.gl/FeTjVmbY7doXmJbJA" target="_blank"><i
+                                            class="fa-solid fa-location-dot"></i>297 winthrop st, Winthrop, MA -
+                                        02152</a>
                                 </div>
                             </div>
                         </div>
@@ -83,6 +127,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
