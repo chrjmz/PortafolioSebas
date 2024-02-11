@@ -8,6 +8,6 @@ const loading = setInterval(() => {
 }, 500);
 
 
-loading()
+// loading()
 
 
