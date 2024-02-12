@@ -9,6 +9,7 @@ body {
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
     margin-top: 80px;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -106,6 +107,14 @@ input::placeholder {
 
 .gap20 {
     gap: 20px;
+}
+
+.gap30 {
+    gap: 30px;
+}
+
+.gap40 {
+    gap: 40px;
 }
 
 .center {
@@ -460,13 +469,13 @@ header label[for="check"] i {
     color: #fff;
 }
 
-@media (min-width: 858px) {
+@media (min-width: 500px) {
     .lado-b {
         margin-bottom: -100px;
     }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 500px) {
     .lado-a.flex {
         gap: 10px !important;
         margin-bottom: 10px;
@@ -495,6 +504,7 @@ header label[for="check"] i {
 
 .detres.fondeado {
     background: var(--color-p);
+    color: #fff;
 }
 
 #services-home .subtexto {
@@ -521,6 +531,9 @@ header label[for="check"] i {
 
 #portfolio-home {
     margin-bottom: 80px;
+    background: var(--color-p);
+    color: #fff;
+    padding: 50px 20px;
 }
 
 #portfolio-home h5 {
@@ -536,13 +549,18 @@ header label[for="check"] i {
     width: 100%;
 }
 
+.port.sombra:hover {
+    background: #fff;
+    color: #000;
+}
+
 
 @media (max-width: 858px) {
     #portfolio-home .right.de100 {
         width: 0px;
     }
 
-    #portfolio-home .button.solido {
+    #portfolio-home .button.claro {
         width: 110px;
         position: absolute;
         right: 20px;
@@ -785,4 +803,45 @@ footer .seccion_contacto>.flex {
         margin-top: -16px;
         padding-bottom: 20px;
     }
+}
+
+/* ----------------------------------------Scroll----------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #00c066;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+
+/* ----------------------------------------Fondo fijo----------------------------------------- */
+
+#fondo-static{
+    background-image: var(--fondo-desk);
+    background-attachment: fixed;
+    padding: 150px 20px;
+    color: #fff;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:500px) {
+    #fondo-static{
+        background-image: var(--fondo-mob);
+    }
+}
+
+#text-final{
+    padding: 100px 20px;
+}
+
+#text-final p{
+    margin-top: 20px;
+    margin-bottom: 40px;
 }

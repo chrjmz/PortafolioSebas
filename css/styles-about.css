@@ -1,0 +1,33 @@
+.contenido .button {
+    margin-top: 20px !important;
+    display: block;
+    max-width: 160px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lado-b {
+    margin-bottom: 0px !important;
+}
+
+.marg-botton{
+    margin-bottom: 50px;
+}
+
+#titular{
+    padding: 50px 20px;
+}
+
+#titular p{
+    margin-top: 20px;
+}
+
+#text-final{
+    padding: 100px 20px;
+}
+
+#text-final p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+

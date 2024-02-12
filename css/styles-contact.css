@@ -4,22 +4,13 @@
     }
 }
 
-@media screen and (max-width: 500px){
-    .listado-contact {
-        margin-top: 50px;
-    }
-    .de50{
-        width: 100%;
-    }
-
-    .social-media {
-        text-align: center;
-    }
-}
-
 #formulario{
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+.listado-contact{
+    font-size: 22px;
 }
 
 .listado-contact i {
@@ -41,12 +32,29 @@
     color: #00aa5b;
 }
 
-.social-media h3 {
+.listado-contact h3{
     margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 input.button.solido {
     border: 2px solid var(--color-p) !important;
     font-size: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .listado-contact {
+        margin-top: 50px;
+    }
+    .de50{
+        width: 100%;
+    }
+
+    .listado-contact h3, .social-media {
+        text-align: center;
+    }
+
+    .listado-contact {
+        font-size: 18px;
+    }
 }
