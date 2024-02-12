@@ -14,8 +14,7 @@
 
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/f6c2459018.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link rel="stylesheet" href="./css/animate.min.css" />
 </head>
 
 <body>
@@ -25,8 +24,8 @@
     </div>
     <header>
         <div class="container flex">
-            <a href="/" class="enlace">
-                <h1>Giovany Services</h1>
+            <a href="./" class="enlace">
+                <span class="tituloLogo">Giovany Services</span>
             </a>
             <input type="checkbox" id="check" />
             <label for="check" class="checkbtn burger">
@@ -43,27 +42,38 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="/">Home</a>
+                                <a href="./">Home</a>
                             </li>
                             <li>
-                                <a href="/about-us.html">About us</a>
+                                <a href="./about-us.html">About us</a>
                             </li>
                             <li>
-                                <a href="/services.html">Services</a>
+                                <a href="./services.html" class="active">Services</a>
                             </li>
                             <li>
-                                <a href="/portfolio.html" class="active">Portfolio</a>
+                                <a href="./portfolio.html">Portfolio</a>
                             </li>
                             <li>
-                                <a href="#">Contact us</a>
+                                <a href="./contact.html">Contact us</a>
                             </li>
                         </ul>
-                    </nav>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+
+    <section id="tilutlo-general">
+        <div class="container flex dir-v-mob">
+            <div class="lado-a-t de50 de2-mob flex centrar-h dir-v">
+                <h1>Portfolio</h1>
+                <span class="lineaTitulo"></span>
+            </div>
+            <div class="lado-b-t de50 de1-mob">
+                <img src="./assets/img-contact.jpg" class="animate__backInUp animate__delay-2s" alt="">
+            </div>
+        </div>
+    </section>
 
     <section id="port-items">
         <div class="container">

@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us - Giovany Services</title>
+    <title>Services - Giovany Services</title>
 
     <!-- Estilos -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -61,7 +62,6 @@
             </div>
         </div>
     </header>
-
     <section id="tilutlo-general">
         <div class="container flex dir-v-mob">
             <div class="lado-a-t de50 de2-mob flex centrar-h dir-v">
@@ -73,21 +73,88 @@
             </div>
         </div>
     </section>
-
+    <section id="formulario">
+        <div class="container flex dir-v-mob">
+            <div class="lado-a-contact de50 flex">
+                <form action="#" method="post" class="gap15 flex dir-v de100">
+                    <div class="pregunta flex dir-v gap0">
+                        <label for="nombre">Name or Company:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="John Park">
+                        <span class="error-nombre"></span>
+                    </div>
+                    <div class="pregunta flex dir-v gap0">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="mails@gmail.com">
+                        <span class="error-email"></span>
+                    </div>
+                    <div class="pregunta flex dir-v gap0">
+                        <label for="telefono">Phone:</label>
+                        <input type="tel" id="telefono" name="telefono" required  placeholder="+1800000000">
+                        <span class="error-tel"></span>
+                    </div>
+                    <div class="pregunta flex dir-v gap0">
+                        <label for="mensaje">Message:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <div class="pregunta center">
+                        <input class="button solido" type="submit" onclick="verificarInputs()" value="Enviar">
+                    </div>
+                </form>
+            
+        </div>
+        <div class="lado-b-contact de50 flex dir-v centrar-h">
+            <div class="listado-contact">
+                <ul>
+                    <li class="flex centrar-v gap15">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://maps.app.goo.gl/bAw1so2VARFAkvqu8" target="_blank" class="flex">
+                            38 williams st, Chelsea, MA - 02150
+                        </a>
+                    </li>
+                    <li class="flex centrar-v gap15">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://maps.app.goo.gl/FeTjVmbY7doXmJbJA" target="_blank" class="flex">
+                            297 winthrop st, Winthrop, MA - 02152
+                        </a>
+                    </li>
+                </ul>
+                <div class="social-media">
+                    <h3>Follow us</h3>
+                    <div class="iconos-social">
+                        <a href="#facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#Youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
     <footer>
         <div class="share-box">
             <input type="checkbox" id="click">
             <label for="click" class="share-btn">
-              <span class="fas fa-share-alt"></span>
-              <a href="#"><span class="fab fa-twitter"></span></a>
-              <a href="#"><span class="fab fa-instagram"></span></a>
-              <a href="#"><span class="fab fa-youtube"></span></a>
+                <span class="fas fa-share-alt"></span>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-youtube"></span></a>
             </label>
         </div>
         <div class="seccion_contacto">
             <div class="container flex dir-v-mob">
                 <div class="logo_footer">
-                    <!-- Logo IMG-->
                     <img src="./assets/tulogo.png" alt="">
                 </div>
                 <div class="contact_us">
@@ -132,6 +199,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/mails.js"></script>
 </body>
 
 </html>

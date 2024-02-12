@@ -1,0 +1,52 @@
+@media screen and (min-width: 500px){
+    .de50{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .listado-contact {
+        margin-top: 50px;
+    }
+    .de50{
+        width: 100%;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+}
+
+#formulario{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.listado-contact i {
+    color: #048a4c;
+}
+
+.listado-contact li a {
+    color: #000;
+}
+
+.social-media i {
+    font-size: 34px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.social-media i:hover {
+    color: #00aa5b;
+}
+
+.social-media h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+input.button.solido {
+    border: 2px solid var(--color-p) !important;
+    font-size: 20px;
+}
