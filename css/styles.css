@@ -743,11 +743,23 @@ footer .seccion_contacto>.flex {
 
 .locations,
 .contact {
-    margin: 10px 0;
+    margin: 0px 0;
+    font-size: 18px;
+}
+
+.locations a,
+.contact a{
+    font-size: 18px;
+}
+
+.contact > div{
+    margin-bottom: 15px;
+
 }
 
 .location_1 {
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .email {
